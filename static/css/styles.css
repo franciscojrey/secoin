@@ -112,12 +112,9 @@ body {
 }
 
 section {
-  padding: 3em 1em;
+  padding: 6em;
 }
 
-ul {
-
-}
 a {
   text-decoration: none;
 }
@@ -536,6 +533,10 @@ p {
 
 /* --------------- FOOTER START --------------- */
 
+footer {
+  border-top: 1px solid rgb(218, 218, 218);
+}
+
 .contact {
     width:100%;
     padding: 5em 1em;
@@ -562,9 +563,6 @@ p {
 }
 
 .form {
-    -webkit-box-shadow: 0px 0px 22px 3px rgba(199, 199, 199, 0.5);
-    -moz-box-shadow: 0px 0px 22px 3px rgba(199, 199, 199, 0.5);
-    box-shadow: 0px 0px 22px 3px rgba(199, 199, 199, 0.5);
     max-width: 500px;
     padding: 2em;
     display: flex;
@@ -577,8 +575,7 @@ p {
 }
 
 .form__title {
-    text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: Raleway-Light;
     color: var(--clr-black);
     letter-spacing: 2px;
@@ -624,7 +621,7 @@ textarea {
     font-size: .7rem;
     font-weight: bolder;
     letter-spacing: 2px;
-    width: 100%;
+    width: 60%;
     border-radius: 2px;
     border: 1px solid #889098;
     padding: 1.5em;
@@ -659,18 +656,17 @@ textarea {
 }
 
 .contact__title {
-    font-size: 1.3rem;
-    font-family: Raleway;
-    color: var(--clr-black);
-    letter-spacing: 2px;
-    font-weight: bolder;
-    margin-bottom: .5em;
-    line-height: 1.5em;
+  font-size: 1.1rem;
+  font-family: Raleway-Light;
+  color: var(--clr-black);
+  letter-spacing: 2px;
+  font-weight: bolder;
+  line-height: 1.5em;
 }
 
 .contact__description {
     color: var(--clr-black);
-    font-family: Colfax;
+    font-family: OpenSans;
     font-size: .7rem;
     margin-bottom: .3em;
     font-weight: lighter;
