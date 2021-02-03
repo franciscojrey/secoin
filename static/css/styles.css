@@ -135,8 +135,8 @@ p {
 
 .anchor {
   display:block;
-  height:120px; 
-  margin-top:-120px; 
+  height:105px; 
+  margin-top:-105px; 
   visibility:hidden;
 }
 
@@ -265,6 +265,7 @@ p {
 .product__box3 { grid-area: box3; }
 
 .product__box {
+  cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
   background: var(--clr-white);
@@ -305,37 +306,13 @@ p {
   grid-area: title;
   color: var(--clr-black);
   font-size: .8rem;
-  padding-top: .5em;
+  padding: .5em;
   font-family: Quicksand;
   letter-spacing: 4px;
-}
-
-.product__box-description {
-  grid-area: description;
-  font-family: Quicksand;
-  padding-top: 1em;
-  font-size: .7rem;
-  color: var(--clr-black);
-  line-height: 1.2rem;
-  letter-spacing: 1.5px;
-}
-
-.product__btn {
-  grid-area: btn;
-  font-family: Quicksand;
-  color: black;
-  font-weight: bolder;
-  font-size: .8rem;
-  letter-spacing: 2px;
-  transition: all .5s ease-out;
-}
-
-.product__btn:hover {
-  color: rgb(56, 165, 228);
+  margin: 0;
 }
 
 /* --------------- PRODUCTS END --------------- */
-/* --------------- SERVICES END --------------- */
 
 
 /* --------------- ACTION-CALL START --------------- */
@@ -486,8 +463,6 @@ p {
 }
 
 /* --------------- FEATURES END --------------- */
-
-
 
 /* --------------- SECOIN-LINK START --------------- */
 
@@ -776,6 +751,28 @@ input[type=number] {
 .section-center {
     width: 95vw;
   }
+
+
+  /* --------------- PRODUCTS BIG SCREEN START --------------- */
+
+.products {
+  padding: 0 2em;
+  max-width: 1300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "box1 box2 box3"
+}
+
+.products__title {
+  font-size: 1.6rem;
+}
+
+.product__box h4 {
+  font-size: 1rem;
+}
+
+
+/* --------------- PRODUCTS BIG SCREEN END --------------- */
 }
 
   main {
@@ -905,32 +902,7 @@ nav {
 
 /* --------------- HOME BIG SCREEN END --------------- */
 
-/* --------------- PRODUCTS BIG SCREEN START --------------- */
 
-.products {
-  padding: 0 2em;
-  max-width: 1300px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-  "box1 box2 box3"
-}
-
-.products__title {
-  font-size: 1.6rem;
-}
-
-.product__box h4 {
-  padding-top: 0;
-  font-size: 1rem;
-}
-
-.product__box-description {
-  padding: 0;
-  font-size: .7rem;
-  letter-spacing: 1px;
-}
-
-/* --------------- PRODUCTS BIG SCREEN END --------------- */
 
   /* --------------- ACTION-CALL BIG SCREEN START --------------- */
 

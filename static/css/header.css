@@ -226,9 +226,10 @@ a {
 }
 
 .nav__link {
-  color: #b49c86; 
+  transition: all .25s ease-in-out;
+  color: #232323; 
   font-family: Raleway-Medium;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .nav__social {
@@ -326,9 +327,8 @@ a {
     padding: .3rem;
     border-radius: .25rem;
   }
-  
   .nav__link:hover {
-    color: #807367; 
+    color: #AAB4BE; 
   }
   /*
   .active {
