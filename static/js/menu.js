@@ -23,6 +23,19 @@ this.classList.add('active');
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+/* DROPDOWN MENU */
+
+const dropdown = document.querySelector('.dropdown');
+const dropdownLinks = document.querySelector('.dropdown__menu');
+const dropdownIcon = document.querySelector('.dropdown__icon');
+
+dropdown.addEventListener("click", function() {
+  dropdownLinks.classList.toggle('display-dropdown')
+  dropdownIcon.classList.toggle('rotate-icon');
+});
+
+
+
 /*===== MENU SHOW Y HIDDEN =====*/ 
 /*const navMenu = document.getElementById('nav-menu'),
       toggleMenu = document.getElementById('nav-toggle'),
