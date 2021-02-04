@@ -28,11 +28,14 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const dropdown = document.querySelector('.dropdown');
 const dropdownLinks = document.querySelector('.dropdown__menu');
 const dropdownIcon = document.querySelector('.dropdown__icon');
+const pageWidth = window.matchMedia( "(max-width: 900px)" );
 
-dropdown.addEventListener("click", function() {
-  dropdownLinks.classList.toggle('display-dropdown')
-  dropdownIcon.classList.toggle('rotate-icon');
-});
+if (pageWidth.matches){
+  dropdown.addEventListener("click", function() {
+    dropdownLinks.classList.toggle('display-dropdown');
+    dropdownIcon.classList.toggle('rotate-icon');    
+  });
+}
 
 
 
