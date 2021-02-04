@@ -786,6 +786,7 @@ input[type=number] {
 Navbar
 ===============
 */
+/*
 nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
@@ -838,6 +839,8 @@ nav {
 .show-links {
   height: 10rem;
 }
+
+*/
 @media screen and (min-width: 800px) {
 
   .icon-whatsapp{
@@ -845,7 +848,7 @@ nav {
     right: 60px;
     padding: .5em;
   }
-
+/*
   .nav-center {
     max-width: 1400px;
     margin: 0 auto;
@@ -872,6 +875,8 @@ nav {
     padding: 0;
     background: transparent;
   }
+
+  */
   /* --------------- HOME BIG SCREEN START --------------- */
 
   .carousel-item {
