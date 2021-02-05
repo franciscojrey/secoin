@@ -166,36 +166,34 @@ p {
 
 /* --------------- HOME START --------------- */
 
-.home {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 6em 1em 4em 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "title"
-  "services"
-  "characteristics"
-  "gallery";
-}
-
 .home-title {
-  grid-area: title;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: OpenSans;
   color: var(--clr-black);
   letter-spacing: 3px;
   line-height: 1.5em;
   text-align: center;
   text-transform: uppercase;
-  padding: 2em 0 1em 0;
+  padding: 6em 0 2em 0;
 }
+
+.service-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "characteristics"
+  "gallery";
+}
+
 
 /* --------------- HOME END --------------- */
 
 /* --------------- SERVICES START --------------- */
-
+/*
 .services {
   grid-area: services;
   margin-bottom: 4em;
@@ -242,7 +240,7 @@ p {
   background-color: #AAB4BE;
   color: #232323;
 }
-
+*/
 /* --------------- SERVICES END --------------- */
 
 /* --------------- SERVICE CHARACTERISTICS START --------------- */
@@ -251,18 +249,28 @@ p {
     grid-area: characteristics;
 }
 
-.service-characteristics h4 {
-    font-family: Raleway;
-    color: #232323;
-    font-size: 1rem;
+.service-characteristics ul {
+  -webkit-box-shadow: 0px 0px 22px 3px rgba(199, 199, 199, 0.5);
+  -moz-box-shadow: 0px 0px 22px 3px rgba(199, 199, 199, 0.5);
+  box-shadow: 0px 0px 22px 3px rgba(151, 151, 151, 0.452);
+  padding: 2em;
+  border-radius: 10px;
 }
 
 .service-characteristics li {
+    border-top: 1px solid rgba(228, 228, 228, 0.753);
     font-family: OpenSans;
     font-size: .9rem;
     padding: .2em 0;
     color: #000000;
+    padding: .5em;
 }
+
+.service-characteristics li:first-child {
+  border: none;
+}
+
+
 /* --------------- SERVICE CHARACTERISTICS END --------------- */
 
 /* --------------- GALLERY START --------------- */
@@ -633,21 +641,19 @@ input[type=number] {
 
   /* --------------- HOME BIG SCREEN START --------------- */
 
-  .home {
-    grid-gap: 2em;
-    max-width: 1600px;
-    padding: 6em 2em 4em 2em;
-    grid-template-columns: 20% 15% 65%;
-    grid-template-areas: 
-    "title title title"
-    "services characteristics gallery";
+  .service-container {
+    max-width: 1200px;
+    padding: 0 0 5em 0;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    "characteristics gallery";
   }
   /* --------------- HOME BIG SCREEN END --------------- */
 
   /* --------------- GALLERY BIG SCREEN START --------------- */
 
   .gallery {
-    max-width: 800px;
+    max-width: 600px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "img1 img2 img2"

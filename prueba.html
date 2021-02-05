@@ -1,49 +1,39 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- BOX ICONS MENU TOGGLE -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="static/css/header.css">
+<head>
+    <meta charset="UTF-8">
+    <!--- Don't forget to add this meta tag otherwise your design won't responsive ---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- <title>Responsive Image Lightbox | CodingNepal</title> ---->
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="gallery">
+      <div class="image"><img src="static/img/home1.jpg" alt=""></div>
+      <div class="image"><img src="static/img/home2.jpg" alt=""></div>
+      <div class="image"><img src="static/img/home1.jpg" alt=""></div>
+      <div class="image"><img src="static/img/home1.jpg" alt=""></div>
+      <div class="image"><img src="static/img/home1.jpg" alt=""></div>
+      <div class="image"><img src="static/img/home1.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box">
+      <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+      <div class="slide next"><i class="fas fa-angle-right"></i></div>
+      <img src="" alt="">
+    </div>
+  </div>
+  <div class="shadow"></div>
 
-        <title>Responsive menu dropdown</title>
-    </head>
-    <body>
-        <header class="header">
-            <a href="" class="nav__perfil">
-                <div class="nav__img">
-                    <img src="static/img/logo.png" alt="">
-                </div>
-            </a>
-            <i class='bx bx-menu header__toggle' id="header-toggle"></i>
-            <nav class="nav" id="nav-menu">
-                <div class="nav__content bd-grid">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link active">Inicio</a></li>
-                        <li class="nav__item dropdown">
-                            <a href="#" class="nav__link dropdown__link">Servicios<i class='bx bx-chevron-down dropdown__icon'></i></a>
-                            <ul class="dropdown__menu">
-                                <li class="dropdown__item"><a href="#" class="nav__link">Instalaciones eléctricas</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Instalaciones sanitarias</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Datos, redes y telefonía</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Instalación de gas</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Instalaciones contra incendios</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Estructuras</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Trabajos de albañileria</a></li>
-                                <li class="dropdown__item"><a href="#" class="nav__link">Obra fina</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav__item"><a href="#" class="nav__link">Rubros</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+  <script src="static/js/gallery.js"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="static/js/menu.js"></script>
-    </body>
+</body>
 </html>
