@@ -218,6 +218,7 @@ a {
   .nav__img img {
     width: 300px;
     margin-left: 1.5rem;
+    max-height: none;
   }
   .nav__name {
     color: var(--dark-color);
