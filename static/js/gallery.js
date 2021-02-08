@@ -66,3 +66,11 @@ window.onload = ()=>{
     }
     
 }
+
+shadow.addEventListener('click', (e) => {
+    if(e.target.classList.contains('shadow')){
+        shadow.style.display = "none";
+        previewBox.classList.remove("show");
+        document.querySelector("body").style.overflow = "scroll";
+    };
+});
