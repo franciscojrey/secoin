@@ -1,3 +1,4 @@
+@media screen and (min-width: 900px) {
 #instalaciones-sanitarias-gallery{
     grid-template-areas: 
     "imagenGaleria1 imagenGaleria1 imagenGaleria3"
@@ -44,3 +45,4 @@
   #imagen12-galeria {
     grid-area: imagenGaleria12;
   }
+}

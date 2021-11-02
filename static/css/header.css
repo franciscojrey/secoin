@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 7rem;
+  --header-height: 6rem;
 
   /*===== Colors =====*/
   --first-color: #AAB4BE;
@@ -129,6 +129,7 @@ a {
 
 .nav__link {
   color: var(--first-color-light);
+  font-size: .8rem;
 }
 
 .nav__link:hover {
@@ -188,7 +189,7 @@ a {
     margin: 0;
   }
   .header {
-    padding: 0 2em;
+    padding: 0 10em;
     height: calc(var(--header-height) + 1rem);
   }
   .header__logo, .header__toggle {
@@ -230,7 +231,7 @@ a {
   }
   .nav__item {
     height: 100%;
-    margin: 0 1.5rem;
+    margin: 0 1rem;
     padding: 1.4rem 0;
     display: flex;
     align-items: center;

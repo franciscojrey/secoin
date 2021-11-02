@@ -1,8 +1,9 @@
+@media screen and (min-width: 900px) {
 #instalacion-gas-gallery{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    "imagenGaleria1 imagenGaleria2"
-    "imagenGaleria3 imagenGaleria4"
+    "imagenGaleria1 imagenGaleria2 imagenGaleria2"
+    "imagenGaleria1 imagenGaleria3 imagenGaleria4"
     ;
 }
 
@@ -18,3 +19,4 @@
 #imagen4-galeria {
     grid-area: imagenGaleria4;
   }
+}

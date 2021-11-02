@@ -3,12 +3,12 @@
 .home-title {
   margin: 0;
   font-size: 1.2rem;
-  font-family: OpenSans;
+  font-family: Raleway-Light;
   color: var(--clr-black);
   letter-spacing: 3px;
   line-height: 1.5em;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 3em 0 2em 0;
 }
 
@@ -34,7 +34,8 @@
 
 .service-characteristics li {
   border-top: 1px solid rgba(228, 228, 228, 0.753);
-  font-family: OpenSans;
+  font-family: Raleway-Light;
+  font-weight:normal;
   font-size: .9rem;
   padding: .2em 0;
   color: #000000;

@@ -1,3 +1,4 @@
+@media screen and (min-width: 900px) {
 #instalaciones-electricas-gallery{
     grid-template-areas: 
     "imagenGaleria1 imagenGaleria2 imagenGaleria3"
@@ -27,3 +28,4 @@
 #imagen7-galeria {
     grid-area: imagenGaleria7;
   }
+}
