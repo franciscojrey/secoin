@@ -1,0 +1,69 @@
+#estructuras-gallery{
+    grid-template-areas: 
+    "imagenGaleria1 imagenGaleria2 imagenGaleria3"
+    "imagenGaleria4 imagenGaleria5 imagenGaleria6"
+    "imagenGaleria7 imagenGaleria8 imagenGaleria9"
+    "imagenGaleria10 imagenGaleria11 imagenGaleria12"
+    "imagenGaleria13 imagenGaleria14 imagenGaleria15"
+    "imagenGaleria16 imagenGaleria17 imagenGaleria18"
+    "imagenGaleria19 imagenGaleria19 imagenGaleria19"
+    ;
+}
+
+  #imagen1-galeria {
+    grid-area: imagenGaleria1;
+  }
+  #imagen2-galeria {
+    grid-area: imagenGaleria2;
+  }
+  #imagen3-galeria {
+    grid-area: imagenGaleria3;
+  }
+  #imagen4-galeria {
+    grid-area: imagenGaleria4;
+  }
+  #imagen5-galeria {
+    grid-area: imagenGaleria5;
+  }
+  #imagen6-galeria {
+    grid-area: imagenGaleria6;
+  }
+  #imagen7-galeria {
+    grid-area: imagenGaleria7;
+  }
+  #imagen8-galeria {
+    grid-area: imagenGaleria8;
+  }
+  #imagen9-galeria {
+    grid-area: imagenGaleria9;
+  }
+  #imagen10-galeria {
+    grid-area: imagenGaleria10;
+  }
+  #imagen11-galeria {
+    grid-area: imagenGaleria11;
+  }
+  #imagen12-galeria {
+    grid-area: imagenGaleria12;
+  }
+  #imagen13-galeria {
+    grid-area: imagenGaleria13;
+  }
+  #imagen14-galeria {
+    grid-area: imagenGaleria14;
+  }
+  #imagen15-galeria {
+    grid-area: imagenGaleria15;
+  }
+  #imagen16-galeria {
+    grid-area: imagenGaleria16;
+  }
+  #imagen17-galeria {
+    grid-area: imagenGaleria17;
+  }
+  #imagen18-galeria {
+    grid-area: imagenGaleria18;
+  }
+  #imagen19-galeria {
+    grid-area: imagenGaleria19;
+  }

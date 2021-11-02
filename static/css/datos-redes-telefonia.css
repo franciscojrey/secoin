@@ -1,0 +1,22 @@
+#datos-redes-telefonia-gallery{
+    grid-template-areas: 
+    "imagenGaleria1 imagenGaleria2 imagenGaleria3"
+    "imagenGaleria4 imagenGaleria5 imagenGaleria5"
+    ;
+}
+
+#imagen1-galeria {
+    grid-area: imagenGaleria1;
+  }
+#imagen2-galeria {
+    grid-area: imagenGaleria2;
+  }
+#imagen3-galeria {
+    grid-area: imagenGaleria3;
+  }
+#imagen4-galeria {
+    grid-area: imagenGaleria4;
+  }
+#imagen5-galeria {
+    grid-area: imagenGaleria5;
+  }

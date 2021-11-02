@@ -56,13 +56,13 @@ border: none;
   }
   .wrapper{
       padding: 0 2em;
-      max-width: 600px;
+      max-width: 800px;
       margin: 0 auto;
   }
   .gallery{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: .3em;
+    grid-gap: .8em;
   }
   .gallery .image{
     width: 100%;
