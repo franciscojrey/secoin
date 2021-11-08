@@ -129,6 +129,7 @@ a {
 .nav__link {
   color: var(--first-color-light);
   font-size: .8rem;
+  cursor: pointer;
 }
 /*
 .nav__link:hover {

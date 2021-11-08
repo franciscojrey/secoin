@@ -39,6 +39,8 @@ if (pageWidth.matches){
   });
 }
 
+const navLinkClose = document.querySelectorAll('.link__close');   
+
 function linkAction(){
   const toggle = document.getElementById('header-toggle'),
   nav = document.getElementById('nav-menu')
@@ -46,7 +48,7 @@ function linkAction(){
   nav.classList.toggle('show');
   toggle.classList.toggle('bx-x');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction));
+navLinkClose.forEach(n => n.addEventListener('click', linkAction));
 
 
 /*===== MENU SHOW Y HIDDEN =====*/ 
