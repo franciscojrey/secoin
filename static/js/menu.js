@@ -15,13 +15,15 @@ showMenu('header-toggle','nav-menu')
 /*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');   
 
+/*
 function linkAction(){
 /*Active link*/
+/*
 navLink.forEach(n => n.classList.remove('active'));
 this.classList.add('active');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
-
+*/
 
 /* DROPDOWN MENU */
 
@@ -37,6 +39,14 @@ if (pageWidth.matches){
   });
 }
 
+function linkAction(){
+  const toggle = document.getElementById('header-toggle'),
+  nav = document.getElementById('nav-menu')
+  /*Remove menu mobile*/
+  nav.classList.toggle('show');
+  toggle.classList.toggle('bx-x');
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 /*===== MENU SHOW Y HIDDEN =====*/ 

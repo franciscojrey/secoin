@@ -1,7 +1,10 @@
 #datos-redes-telefonia-gallery{
+  grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "imagenGaleria1 imagenGaleria2 imagenGaleria3"
-    "imagenGaleria4 imagenGaleria5 imagenGaleria5"
+    "imagenGaleria1 imagenGaleria2"
+    "imagenGaleria1 imagenGaleria3"
+    "imagenGaleria4 imagenGaleria3"
+    "imagenGaleria4 imagenGaleria5"
     ;
 }
 

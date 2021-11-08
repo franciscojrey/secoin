@@ -47,7 +47,6 @@ ul {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 /*===== HEADER =====*/
@@ -131,26 +130,30 @@ a {
   color: var(--first-color-light);
   font-size: .8rem;
 }
-
+/*
 .nav__link:hover {
   color: var(--white-color);
 }
 
+.nav__link:hover + .icon-services{
+  color: var(--white-color);
+}
+*/
 /*Show menu*/
 .show {
   left: 0;
 }
-
+/*
 /*Active link*/
-.active {
+/*.active {
   color: var(--white-color);
 }
-
+*/
 /*=== Dropdown ===*/
 .dropdown__link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   transition: all .5s ease-in-out;
 }
 
@@ -232,38 +235,76 @@ a {
   .nav__item {
     height: 100%;
     margin: 0 1rem;
-    padding: 1.4rem 0;
+    padding: 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
+  }
+  .nav__item:hover {
+    border-top: 8px solid black;
+    margin-top: -8px;
   }
   .nav__link {
-    color: var(--dark-color);
+    color: var(--light-shadow);
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
+  
+  /*
   .nav__link:hover {
     color: var(--first-color);
   }
+  */
+  /*
+  .nav__link:hover + .icon-services{
+    color: var(--first-color);
+  }
+  */
+  .icon-services{
+    cursor:pointer;
+  }
+  /*
+  .icon-services:hover{
+    color: var(--first-color);
+  }
+  */
+  /*
+  .icon-services:hover ~ .nav__link { 
+    color: var(--first-color);
+  }
+  */
   /*Active link new color*/
+  /*
   .active {
     color: var(--first-color);
   }
+  */
   .dropdown {
     position: relative;
   }
   .dropdown__menu {
+    border-top: 4px solid black;
     position: fixed;
-    margin: 0;
+    margin: -40px 0 0 -100px;
     top: calc(var(--header-height) + 1rem);
-    padding: .5rem 1.5rem;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 6px 10px rgba(199, 199, 199, 0.5);
-    -moz-box-shadow: 0 6px 10px rgba(199, 199, 199, 0.5);
-    box-shadow: 0 6px 10px rgba(151, 151, 151, 0.452);
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
+    padding: 0;
+    box-shadow: 0 7px 14px rgb(23 29 34 / 10%);
     background-color: white;
+    width: 300px;
   }
   .dropdown__item {
-    margin: .5rem 0;
+    margin: 0;
+
+    color: rgb(90, 90, 90);
+    font-weight: lighter;
+  }
+  .dropdown__item:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .dropdown__item:hover {
+    background-color: rgb(204, 204, 204);
   }
 
   .dropdown:hover > .dropdown__menu {
@@ -272,5 +313,9 @@ a {
 
   .dropdown:hover .dropdown__icon {
     transform: rotate(180deg);
+  }
+
+  .link__dropdown {
+    padding: .8em 1em;
   }
 }
