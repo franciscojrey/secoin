@@ -118,6 +118,9 @@ p {
 
 .carousel-item {
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carousel-caption {
@@ -127,6 +130,62 @@ p {
   width: 100%;
   right: 0;
   left: 0;
+}
+
+#carousel-image1 {
+  background-image: url(../img/home1.png);
+  animation-name: animate1;
+  animation-direction:alternate-reverse;
+  animation-duration: 10s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-timing-function: ease-in-out;
+}
+#carousel-image2 {
+  background-image: url(../img/home2.png);
+  animation-name: animate2;
+  animation-direction:alternate-reverse;
+  animation-duration: 10s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-timing-function: ease-in-out;
+}
+#carousel-image3 {
+  background-image: url(../img/home3.png);
+  animation-name: animate3;
+  animation-direction:alternate-reverse;
+  animation-duration: 10s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate1 {
+  0%{
+    background-image:url(../img/home1.png);
+  }
+  50%{
+    background-image:url(../img/home2.png);
+  }
+}
+@keyframes animate2 {
+  0%{
+    background-image:url(../img/home2.png);
+  }
+  50%{
+    background-image:url(../img/home3.png);
+  }
+}
+@keyframes animate3 {
+  0%{
+    background-image:url(../img/home3.png);
+  }
+  50%{
+    background-image:url(../img/home1.png);
+  }
 }
 
 .carousel-caption h1 {
